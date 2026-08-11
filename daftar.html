@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUSA TRAVEL - Daftar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="navbar">
+            <a class="logo" href="home.html">NUSA TRAVEL</a>
+            <nav class="menu">
+                <a href="home.html">Beranda</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Produk</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="contac.html">Kontak</a>
+                <a class="active" href="daftar.html">Daftar</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="inner-hero">
+                <p class="eyebrow">Pemesanan perjalanan</p>
+                <h1>Daftar perjalananmu sekarang.</h1>
+                <p>Isi data singkat di bawah ini untuk memulai pemesanan paket wisata.</p>
+            </section>
+
+            <section class="form-section">
+                <form class="contact-form" action="https://formspree.io/f/xnpaaeky" method="POST">
+                    <label for="full-name">Nama Lengkap</label>
+                    <input id="full-name" type="text" name="name" placeholder="Nama kamu" required>
+                    <label for="trip-email">Email</label>
+                    <input id="trip-email" type="email" name="email" placeholder="Email.kamu@gmail.com" required>
+                    <label for="destination">Destinasi Pilihan</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">Pilih destinasi</option>
+                        <option>Bali</option>
+                        <option>Gunung Bromo</option>
+                        <option>Raja Ampat</option>
+                        <option>Yogyakarta</option>
+                        <option>Labuan Bajo</option>
+                        <option>Bandung</option>
+                    </select>
+                    <label for="date">Tanggal Berangkat</label>
+                    <input id="date" type="date" name="date" required>
+                    <label for="note">Catatan</label>
+                    <textarea id="note" name="message" rows="5" placeholder="Jumlah peserta atau kebutuhan khusus"></textarea>
+                    <button type="submit">Kirim Pendaftaran</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 NUSA TRAVEL. Semua hak dilindungi.</p>
+        </footer>
+    </div>
+</body>
+</html>
